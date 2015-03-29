@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:minHeight="70dp"
+    android:padding="2dp"
+    >
+    <!-- Title Of Song-->
+
+    <ImageView
+        android:id="@+id/list_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_alignBottom="@id/chat"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fry"
+        />
+
+    <TextView
+        android:id="@+id/chat_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chat"
+        android:textColor="#FF6600"
+        android:textSize="12sp"
+        android:layout_marginRight="60dp"
+        android:padding="1dip"
+        android:layout_alignParentRight="true"
+        android:text="nome utente @ datetime"
+        />
+
+    <TextView
+        android:id="@+id/chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/list_image"
+        android:background="@drawable/bubble_orange"
+        android:paddingBottom="8dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="16dp"
+        android:paddingTop="5dp"
+        android:text="mmeu? mmenda qmmenda q8? autobu? mmenda q8? autobu? 8? autobu?  "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:textIsSelectable="true" />
+
+</RelativeLayout>

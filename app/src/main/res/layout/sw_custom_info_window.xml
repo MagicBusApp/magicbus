@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/bg_patter_geometry"
+    android:orientation="vertical" >
+        
+        <ImageView
+            android:id="@+id/image_sw"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:src="@drawable/sw_cosenza"
+        	android:scaleType="centerInside"
+        />
+                        
+        <TextView
+            android:id="@+id/popupwiki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:text="Sei uno startupper, sviluppatore, designer, marketer, product manager?\nIscriviti e dai il massimo!\n\nPalagarden 13-14-15 dicembre"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textColor="#006DCE" />
+        
+        <TextView
+            android:id="@+id/link_sw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:text="cosenza.startupweekend.org"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="#006DCE" />
+        
+        <Button
+            android:id="@+id/condividibutton"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:paddingRight="10dp"
+    		android:layout_marginTop="20dp"
+    		android:layout_marginBottom="10dp"
+    		android:textAppearance="?android:attr/textAppearanceSmall"
+    		android:background="@android:color/transparent"
+    		android:drawableRight="@drawable/social_share"
+    		android:layout_gravity="center_horizontal"
+             />
+        <!--  
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:text="Sponsor by MagicBus"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textStyle="italic"
+            android:textColor="#ff6600" />
+            -->
+        
+        
+</LinearLayout>

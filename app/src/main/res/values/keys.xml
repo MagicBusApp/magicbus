@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="FACEBOOK_APP_ID">347765041988518</string>
+    <string name="GOOGLE_ANALYTICS_ID">UA&#8211;36889142&#8211;2</string>
+    <string name="MAPS_RELEASE_KEY">AIzaSyBSqQjVMP8ZHO_TcbGWFB6kaWckoFfsP5A</string>
+    <string name="MAPS_DEBUG_KEY">AIzaSyCsPjjbA7PsPiOeuebXprzHIBECtHZ0IM8</string>
+    <string name="PARSE_APP_ID">UtfAJYXdHTp3NRq87YSBa8sRPUyObdaQTKXnjsRP</string>
+    <string name="PARSE_CLIENT_KEY">QJKnJneLLDlGNAr7BITcT6vxEVFMjEMcgDLtNgxo</string>
+    <string name="TWITTER_CONSUMER_KEY">x6xW17OxIdAUH02UWpdCQ</string>
+    <string name="TWITTER_CONSUMER_SECRET">itUH4gZKjcwsvOaLB0LXhNS3psjNXeRufIHkAXN3FA</string>
+    <string name="FIREBASE_URL">https://magicbusapp.firebaseio.com</string>
+    <string name="FIREBASE_CHAT_ROOM">magic_chat</string>
+    <string name="FIREBASE_CHAT_ROOM_DEBUG">test</string>
+</resources>

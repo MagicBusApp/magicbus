@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout_orario"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"   
+    android:background="@drawable/layer_list"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_gravity="top">
+     
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp">
+ 
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/time_icon"/>
+ 
+    </LinearLayout>
+ 
+    <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/ora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="#FF9900"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif"
+        android:text="12:20"/>
+ 
+    <!-- Artist Name -->
+    <TextView
+        android:id="@+id/tratta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#154890"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/ora"
+        android:fontFamily="sans-serif"
+        android:text="LINEA 18 amaco" />
+ 
+    
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wizard_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_wizard_wiki">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/buttonFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="85dp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:visibility="visible"
+            android:textColor="@android:color/white"
+            android:background="@drawable/alert_info"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>

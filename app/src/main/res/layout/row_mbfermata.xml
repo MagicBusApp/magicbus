@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:background="#ffffff"
+    >
+    
+    <RelativeLayout
+        android:layout_width="75dp"
+    	android:layout_height="75dp"
+    	android:background="@drawable/bg_circle"
+    	android:layout_marginTop="25dp"
+    	android:layout_marginLeft="15dp"
+    	android:layout_marginBottom="25dp"
+    		 >
+
+        <TextView
+            android:id="@+id/distanza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:text="30 m"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#086FC7"
+             />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="13dp"
+    	android:layout_marginLeft="15dp"
+    	android:layout_marginBottom="10dp"
+    	android:layout_marginRight="10dp"
+     >
+     
+        <TextView
+            android:id="@+id/nomefermata"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:paddingTop="10dp"
+    		android:layout_marginBottom="20dp"
+    		android:layout_alignParentLeft="true"
+    		android:textAppearance="?android:attr/textAppearanceLarge"
+    		android:textColor="#ff4500"
+    		android:text="Via Rossini"  />
+        
+        
+        
+        <Button
+            android:id="@+id/checkinbutton"
+            android:layout_width="wrap_content"
+    		android:layout_height="35dp"
+    		android:layout_marginLeft="10dp"
+    		android:layout_below="@id/nomefermata"
+    		android:layout_alignParentRight="true"
+    		android:padding="5dp"
+    		android:textAppearance="?android:attr/textAppearanceSmall"
+    		android:background="@drawable/bg_button"
+    		android:textColor="#404040"
+    		android:textStyle="bold"
+    		android:text="Checkin"
+             />
+        
+        <Button
+            android:id="@+id/oraributton"
+            android:layout_width="wrap_content"
+    		android:layout_height="35dp"
+    		android:layout_below="@id/nomefermata"
+    		android:layout_toLeftOf="@id/checkinbutton"
+    		android:padding="5dp"
+    		android:textAppearance="?android:attr/textAppearanceSmall"
+    		android:background="@drawable/bg_button"
+    		android:textColor="#404040"
+    		android:textStyle="bold"
+    		android:text="Orari"
+             />
+        
+    </RelativeLayout>
+    
+    
+
+</LinearLayout>

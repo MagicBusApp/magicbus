@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">MagicBus</string>
+
+    <string name="title_section1">Fermate bus</string>
+    <string name="title_section2">MagicChat</string>
+    <string name="title_section3">WikiBus</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="action_chat">Chiedi info in chat</string>
+
+    <string name="action_settings">Impostazioni</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_nickname">Nickname</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_nome_fermata">Nome della fermata da aggiungere</string>
+    <string name="action_sign_in"><b>Accedi</b></string>
+    <string name="action_register">ANDIAMO!</string>
+    <string name="action_hai_gia_account">Hai già un account? LOG IN</string>
+    <string name="action_add_fermata">Aggiungi</string>
+    <string name="action_sign_in_short">Accedi</string>
+    <string name="action_registrami_short">Registrami</string>
+    <string name="menu_forgot_password">Recupera password</string>
+    <string name="menu_nuovo_account">Aggiungi un account</string>
+    <string name="login_progress_signing_in">Accesso in corso&#8230;</string>
+    <string name="login_progress_registration">Registrazione in corso&#8230;</string>
+    <string name="error_invalid_email">Indirizzo email non valido</string>
+    <string name="error_invalid_password">Password troppo breve</string>
+    <string name="error_invalid_nickname">Nickname troppo breve</string>
+    <string name="error_invalid">Troppo breve</string>
+    <string name="error_incorrect_password">Password errata</string>
+    <string name="error_field_required">Questo campo è richiesto</string>
+    <string name="error_location_null">Attendi qualche secondo, non sei ancora localizzato...</string>
+
+    <string name="app_name_url">magicbusapp.it</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Impostazioni</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_esci">Esci</string>
+    <string name="menu_wikiBus">WikiBus</string>
+    <string name="menu_chat">Entra in chat</string>
+    <string name="title_activity_mbregistration">Nuovo account</string>
+    <string name="title_activity_mbmap">MagicBus</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_mbwiki_bus_activitiy">WikiBus</string>
+    <string name="salvataggio_fermata_progress">Salvataggio fermata in corso&#8230;</string>
+    <string name="recupero_password_progress_signing_in">Recupero password in corso&#8230;</string>
+    <string name="recupero_password_testo">Inserisci l\'email con cui ti sei registrato (ti sarà inviata un\'email con le istruzioni per il recupero)</string>
+    <string name="action_recupero_password">Recupera password</string>
+    <string name="title_activity_mbtest_chat">Test Chat</string>
+    <string name="title_activity_mbchat">Chat</string>
+    <string name="title_activity_mbwizard">MagicBus</string>
+    <string name="title_activity_mbrecupera_password">Recupera password</string>
+    <string name="title_activity_mbdashboard_fragment">MagicBus</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_mbchat_activity_new">Chat</string>
+    <string name="title_activity_mbmain">MagicBus</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_mbaccedi">MBAccediActivity</string>
+    <string name="title_activity_mbauthentication">MBAuthenticationActivity</string>
+    <string name="title_activity_mbweb_view">MBWebViewActivity</string>
+
+</resources>

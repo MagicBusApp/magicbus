@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"  
+    android:orientation="horizontal"
+    android:minHeight="70dp"
+    android:padding="2dp" >  
+ 
+    <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="messaggio chat"
+        android:paddingRight="5dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="5dp"
+        android:background="@drawable/bubble_blue"
+        android:textIsSelectable="true"
+        />
+    
+    <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_alignBottom="@id/chat"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fry"
+            />
+ 
+    <!-- Artist Name -->
+    <TextView
+        android:id="@+id/chat_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chat"
+        android:textColor="#33B5E5"
+        android:textSize="12sp"
+        android:layout_marginLeft="40dp"
+        android:padding="1dip"
+        android:layout_alignParentLeft="true"
+        android:text="nome utente @ datetime" />
+ 
+     <!-- Rightend Arrow 
+     <Button
+        android:id="@+id/rating_bad"
+        android:background="@drawable/rating_bad"
+    	android:layout_alignParentRight="true"	
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/chat"
+       />
+     
+      <Button
+        android:id="@+id/rating_good"
+        android:background="@drawable/rating_good"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+      	android:layout_marginTop="20dp"
+      	android:layout_marginRight="15dp"
+        android:layout_below="@id/chat"
+        android:layout_toLeftOf="@+id/rating_bad"
+        />
+        -->
+ 
+</RelativeLayout>

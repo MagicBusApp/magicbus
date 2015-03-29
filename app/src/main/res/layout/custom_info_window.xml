@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:descendantFocusability="blocksDescendants"
+    android:background="#ffffff"
+    >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/l"
+    	android:background="#6699ff"
+     >
+     
+        <RelativeLayout
+        android:layout_width="75dp"
+    	android:layout_height="75dp"
+    	android:background="@drawable/bg_circle"
+    	android:layout_marginTop="10dp"
+    	android:layout_marginLeft="10dp"
+    	android:layout_marginBottom="10dp"
+    		 >
+
+        <TextView
+            android:id="@+id/distanza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:text="30 m"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#086FC7"
+             />
+        
+    </RelativeLayout>
+     
+        <TextView
+            android:id="@+id/nomefermata"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:paddingTop="10dp"
+    		android:paddingBottom="5dp"
+    		android:paddingRight="5dp"
+    		android:layout_marginTop="5dp"
+    		android:layout_marginLeft="97dp"
+    		android:layout_marginBottom="5dp"
+    		android:layout_alignParentLeft="true"
+    		android:textAppearance="?android:attr/textAppearanceLarge"
+    		android:textColor="#ffffff"
+    		android:text="Autogarage Jonico"  />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+    	android:layout_height="match_parent"
+    	android:layout_gravity="bottom"
+    	android:layout_margin="10dp"
+    		 >
+        
+        <TextView 
+            android:id="@+id/infoora"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textAppearance="?android:attr/textAppearanceMedium"
+    		android:padding="5dp"
+    		android:layout_marginBottom="10dp"
+    		android:textColor="#086FC7"
+    		android:textStyle="bold"
+    		android:text="Via Rossini"
+            />
+        
+        <Button
+            android:id="@+id/checkinbutton"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignParentRight="true"
+    		android:layout_below="@id/infoora"
+    		android:textAppearance="?android:attr/textAppearanceSmall"
+    		android:background="@drawable/bg_button_checkin"
+    		android:textColor="#404040"
+    		android:textStyle="bold"
+    		android:text="Checkin"
+    		android:visibility="gone"
+             />
+        
+        <Button
+            android:id="@+id/condividibutton"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_marginRight="20dp"
+    		android:layout_below="@id/infoora"
+    		android:layout_alignParentRight="true"
+    		android:textAppearance="?android:attr/textAppearanceSmall"
+    		android:background="@android:color/transparent"
+    		android:drawableRight="@drawable/social_share"
+             />
+        
+        <Button
+            android:id="@+id/oraributton"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_below="@id/infoora"
+    		android:layout_alignParentLeft="true"
+    		android:textAppearance="?android:attr/textAppearanceSmall"
+    		android:background="@android:color/transparent"
+    		android:textColor="#404040"
+    		android:textStyle="bold"
+    		android:visibility="gone"
+    		android:text="Orari"
+    		android:drawableLeft="@drawable/device_access_time"
+             />
+
+        <Button
+            android:id="@+id/realtimebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/condividibutton"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:text="Realtime"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#404040"
+            android:textStyle="bold"
+            android:visibility="gone" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="#6699ff"
+     >
+        
+        <Button
+            android:id="@+id/chatbutton"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_margin="5dp"
+    		android:paddingRight="10dp"
+    		android:paddingLeft="5dp"
+    		android:layout_centerHorizontal="true"
+    		android:textAppearance="?android:attr/textAppearanceSmall"
+    		android:background="@drawable/bg_button_checkin"
+    		android:textColor="#ffffff"
+    		android:textStyle="bold"
+    		android:text="Chat"
+    		android:visibility="visible"
+    		android:drawableLeft="@drawable/ic_action_chat"
+             />
+    </RelativeLayout>
+
+</LinearLayout>

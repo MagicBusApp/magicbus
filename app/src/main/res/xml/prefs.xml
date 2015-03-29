@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+        android:title="Informazioni sulla chat" >
+        <EditTextPreference
+            android:key="nickname"
+            android:summary="Please enter your nickname"
+            android:title="Nickname" />
+        <!--
+        <PreferenceCategory
+          android:summary="Social information"
+          android:title="Social" >
+         <CheckBoxPreference
+            android:key="Facebook_Check_Box"
+            android:title="Facebook" />
+         -->
+
+        <ListPreference
+            android:entries="@array/avatarOptions"
+            android:entryValues="@array/avatarValues"
+            android:key="avatarPreference"
+            android:title="Scegli il tuo avatar FACEBOOK o FUTURAMA"
+            android:summary="Comparirà accanto ai tuoi messaggi in chat" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Notifiche Push">
+
+        <CheckBoxPreference
+            android:title="Abilita/Disabilita le notifiche push"
+            android:enabled="true"
+            android:defaultValue="true"
+            android:key="notifichePush"
+            android:summaryOn="Abilitate"
+            android:summaryOff="Disabilitate" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="About">
+        <Preference
+            android:key="about"
+            android:title="Cos'è MagicBus?" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Account">
+        <Preference
+            android:key="logout"
+            android:title="Logout" />
+
+    </PreferenceCategory>
+</PreferenceScreen>
