@@ -17,6 +17,8 @@
         android:layout_alignParentBottom="true"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:background="@drawable/alert_warning"
+        android:textColor="#000"
+        android:text="prova"
         />
     
 </RelativeLayout>

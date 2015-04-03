@@ -16,6 +16,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.gson.JsonObject;
+import com.microsoft.windowsazure.mobileservices.MobileServiceClient;
+import com.microsoft.windowsazure.mobileservices.http.ServiceFilterResponse;
+import com.microsoft.windowsazure.mobileservices.table.MobileServiceJsonTable;
+import com.microsoft.windowsazure.mobileservices.table.TableJsonOperationCallback;
+import com.parse.ParseUser;
+
+import java.net.MalformedURLException;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -254,7 +263,11 @@ public class WikibusFragment extends Fragment {
             mSalvataggioFermataStatusMessageView
                     .setText(R.string.salvataggio_fermata_progress);
             showProgress(true);
-            insertFermata();
+            try {
+                insertFermata();
+            } catch (MalformedURLException e) {
+                MBUtils.showErrorToast(getActivity(), e.getLocalizedMessage());
+            }
         }
     }
 
@@ -302,18 +315,22 @@ public class WikibusFragment extends Fragment {
         }
     }
 
-    private void insertFermata(){
+    private void insertFermata() throws MalformedURLException {
         //TODO insert fermata
         Log.d(TAG, "insertFermata");
-/*
-        ((MBMain) getActivity()).showProgressBar();
+
+        ((MainActivity) getActivity()).showProgressBar();
+
+        MobileServiceClient mClient = new MobileServiceClient(
+                "https://magicbusapp.azure-mobile.net/",
+                "xSjGpQNbfAjsytZcwQLJxeIofQTsYu87", getActivity());
 
         MobileServiceJsonTable fermataTable = mClient.getTable("Fermata");
 
         JsonObject fermata = new JsonObject();
         fermata.addProperty("fermata_name", this.mNomeFermata);
-        fermata.addProperty("fermata_lat", this.locationFermata.getLatitude());
-        fermata.addProperty("fermata_lon", this.locationFermata.getLongitude());
+        fermata.addProperty("fermata_lat", ((MainActivity)getActivity()).getCurrentLocation().getLatitude());
+        fermata.addProperty("fermata_lon", ((MainActivity)getActivity()).getCurrentLocation().getLongitude());
         fermata.addProperty("fermata_validata", false);
 
         ParseUser currentUser = ParseUser.getCurrentUser();
@@ -327,7 +344,7 @@ public class WikibusFragment extends Fragment {
                                     ServiceFilterResponse arg2) {
 
                 showProgress(false);
-                ((MBMain) getActivity()).hideProgressBar();
+                ((MainActivity) getActivity()).hideProgressBar();
 
                 if(exception == null){
                     Log.d(TAG, "Fermata salvata con successo! id: " + fermataObject.get("id").getAsInt());
@@ -348,6 +365,6 @@ public class WikibusFragment extends Fragment {
             }
 
         });
-        */
+
     }
 }

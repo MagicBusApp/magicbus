@@ -32,7 +32,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
             android:layout_alignParentLeft="true"
-            android:src="@drawable/bus_stop" />
+            android:src="@mipmap/ic_bus_marker" />
 
 
     </RelativeLayout>

@@ -1,8 +1,10 @@
 package com.magicbusapp.magicbus;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -83,6 +85,7 @@ public class MBOrari extends Fragment {
         this.fermata = ((MainActivity)getActivity()).fermataSelezionata;
     }
 
+    @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
@@ -266,12 +269,14 @@ public class MBOrari extends Fragment {
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
+        /*
         try {
             mListener = (OnFragmentInteractionListener) activity;
         } catch (ClassCastException e) {
             throw new ClassCastException(activity.toString()
                     + " must implement OnFragmentInteractionListener");
         }
+        */
     }
 
     @Override

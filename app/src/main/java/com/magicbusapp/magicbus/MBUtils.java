@@ -329,7 +329,7 @@ public class MBUtils {
         AlertDialog.Builder alert = new AlertDialog.Builder(activity);
         alert.setTitle("Risposta @ " + nickname); //Set Alert dialog title here
         alert.setMessage("*Il messaggio sarà visibile anche agli altri passengers.");
-        alert.setIcon(R.drawable.ic_action_chat);
+        alert.setIcon(R.mipmap.ic_chatmessage);
         // Set an EditText view to get user input
         final EditText input = new EditText(activity);
         alert.setView(input);
@@ -387,7 +387,7 @@ public class MBUtils {
         AlertDialog.Builder alert = new AlertDialog.Builder(mapFragment.getActivity());
         alert.setTitle("MagicChat"); //Set Alert dialog title here
         alert.setMessage("*Una notifica push sarà inviata a tutti i passengers nei pressi della fermata bus #" + nomeFermata + ".");
-        alert.setIcon(R.drawable.ic_action_chat);
+        alert.setIcon(R.mipmap.ic_chatmessage);
         // Set an EditText view to get user input
         final EditText input = new EditText(mapFragment.getActivity());
         alert.setView(input);
@@ -483,7 +483,7 @@ public class MBUtils {
         AlertDialog.Builder alert = new AlertDialog.Builder(activity);
         alert.setTitle(s); //Set Alert dialog title here
         alert.setMessage("*Il messaggio sarà visibile a tutti i passengers nelle tue vicinanze.");
-        alert.setIcon(R.drawable.ic_action_chat);
+        alert.setIcon(R.mipmap.ic_chatmessage);
         // Set an EditText view to get user input
         final EditText input = new EditText(activity);
         alert.setView(input);

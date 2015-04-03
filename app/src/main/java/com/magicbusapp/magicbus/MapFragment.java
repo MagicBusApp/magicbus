@@ -23,6 +23,7 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -295,7 +296,7 @@ public class MapFragment extends Fragment implements MapEventsReceiver {
         startMarker.setPosition(geoPoint);
         startMarker.setTitle(nicknameSender);
         startMarker.setSnippet(chatMessage);
-        startMarker.setIcon(getResources().getDrawable(R.mipmap.magicuser_default));
+        startMarker.setIcon(getResources().getDrawable(R.mipmap.ic_chatmessage));
         //TODO foto sender
         if (facebookId != null){
             DisplayImageOptions options = new DisplayImageOptions.Builder()
@@ -330,6 +331,9 @@ public class MapFragment extends Fragment implements MapEventsReceiver {
 
                 }
             });
+        }
+        else{
+            startMarker.setImage(getResources().getDrawable(R.drawable.fry));
         }
 
 
@@ -366,14 +370,15 @@ public class MapFragment extends Fragment implements MapEventsReceiver {
         markerFermata.setPosition(geoPoint);
         markerFermata.setTitle("Nuova fermata");
         markerFermata.setSnippet("Tieni premuto sul marker per spostarlo nella posizione corretta!");
-        markerFermata.setIcon(getResources().getDrawable(R.drawable.ic_bus_marker));
+        markerFermata.setIcon(getResources().getDrawable(R.mipmap.ic_bus_marker));
 
         markerFermata.setDraggable(true);
         markerFermata.setOnMarkerDragListener(new Marker.OnMarkerDragListener() {
             @Override
             public void onMarkerDrag(Marker marker) {
-                MBUtils.showInfoToast(getActivity(),
-                        "Rilascia il marker nel punto esatto della fermata...");
+
+                //MBUtils.showInfoToast(getActivity(),
+                  //      "Rilascia il marker nel punto esatto della fermata...");
             }
 
             @Override
@@ -479,7 +484,7 @@ public class MapFragment extends Fragment implements MapEventsReceiver {
 
             @Override
             public void onMarkerDragStart(Marker marker) {
-
+                Toast.makeText(getActivity(), "Rilascia il marker nel punto esatto della fermata...", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -600,7 +605,7 @@ public class MapFragment extends Fragment implements MapEventsReceiver {
             markerFermata.setPosition(startPoint);
             markerFermata.setTitle(fermata.get("fermata_name").getAsString());
             markerFermata.setSnippet(snippet);
-            markerFermata.setIcon(getResources().getDrawable(R.drawable.ic_bus_marker));
+            markerFermata.setIcon(getResources().getDrawable(R.mipmap.ic_bus_marker));
 
             markerFermata.setOnMarkerClickListener(new Marker.OnMarkerClickListener() {
                 @Override

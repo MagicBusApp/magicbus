@@ -5,6 +5,8 @@ import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.location.Location;
 import android.location.LocationManager;
 import android.net.ConnectivityManager;
@@ -20,6 +22,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.facebook.AppEventsLogger;
@@ -33,6 +36,11 @@ import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.gson.JsonObject;
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.assist.FailReason;
+import com.nostra13.universalimageloader.core.assist.ImageLoadingListener;
+import com.nostra13.universalimageloader.core.display.RoundedBitmapDisplayer;
 import com.parse.ParseException;
 import com.parse.ParseFacebookUtils;
 import com.parse.ParseGeoPoint;
@@ -829,12 +837,44 @@ public class MainActivity extends ActionBarActivity
                     final double lat = Lat;
                     final double lng = Lng;
 
-                    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                    final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+                    if (fbId != null){
+                        DisplayImageOptions options = new DisplayImageOptions.Builder()
+                                .cacheInMemory(true).cacheOnDisc(true)
+                                .displayer(new RoundedBitmapDisplayer(5)).build();
+                        ImageLoader.getInstance().loadImage(MBUtils.get_avatar_from_service(1, fbId,
+                                48), new ImageLoadingListener() {
+                            @Override
+                            public void onLoadingStarted(String s, View view) {
+
+                            }
+
+                            @Override
+                            public void onLoadingFailed(String s, View view, FailReason failReason) {
+
+                            }
+
+                            @Override
+                            public void onLoadingComplete(String s, View view, Bitmap bitmap) {
+                                Log.i(TAG, "onLoadingComplete");
+                                builder.setIcon(new BitmapDrawable(bitmap));
+                            }
+
+                            @Override
+                            public void onLoadingCancelled(String s, View view) {
+
+                            }
+                        });
+                    }
+                    else{
+                        builder.setIcon(getResources().getDrawable(R.drawable.fry));
+                    }
+
                     builder.setMessage(msg)
                             .setCancelable(true)
                             .setTitle(nickname)
-                            .setIcon(R.drawable.ic_launcher)
-
+                            //.setIcon(R.drawable.ic_launcher)
                             .setPositiveButton("Rispondi",
                                     new DialogInterface.OnClickListener() {
                                         public void onClick(
