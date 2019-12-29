@@ -3,6 +3,7 @@
 MagicBus is a social-GPS for public transport made in Calabria and opendata based. MagicBus was an app light and easy to use on Android device.
 
 ### Main Functions
+
 #### Search Your Bus Stop
 ![Search01](https://scontent-fco1-1.xx.fbcdn.net/v/t31.0-8/s960x960/10845675_815144815206818_5765630743174044384_o.jpg?_nc_cat=104&_nc_ohc=l30rvqPl6BgAQn50TM9ZA-9L_TimJLP5Ly3j0KXi2DUcFEpCgV9iEV3hA&_nc_ht=scontent-fco1-1.xx&oh=1d11e5f13650355bbf7c6a5e3e99abd9&oe=5E687320)
 ![Search02](https://drive.google.com/file/d/1oZWIzj8OJ2lvLuQT0aYADUys08fBXWFM/view?usp=sharing)
@@ -22,6 +23,7 @@ MagicBus is a social-GPS for public transport made in Calabria and opendata base
 * In 2018 the MagicTeam shut down the server but the code is still available.
 
 <br>
+
 The cities in MagicBus were:
 * Cosenza
 * Rende
