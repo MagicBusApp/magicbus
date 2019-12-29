@@ -11,7 +11,7 @@ MagicBus is a social-GPS for public transport made in Calabria and opendata base
 ![Chat](https://scontent-fco1-1.xx.fbcdn.net/v/t1.0-9/1463017_579043715483597_1094356240_n.jpg?_nc_cat=110&_nc_ohc=37X_sKDo-O4AQnPBnW3-N1ve1yYXKLj5ktrfP3gK211XDn_q5egCU5lUA&_nc_ht=scontent-fco1-1.xx&oh=6e7986ed900317f4fa61a5a9f314fc78&oe=5EA6F1C3)
 
 #### Add Stops by Wiki
-![Wiki](https://drive.google.com/file/d/10G77vn8Z2fXPj1z68ZvA7ddlCtixtNkQ/view?usp=sharing)
+![Wiki](https://scontent-fco1-1.xx.fbcdn.net/v/t1.0-9/1239994_554495171271785_1442090979_n.png?_nc_cat=108&_nc_ohc=rLvm-ks0uyIAQmHupZucDt9b5mroQxi395XmavI7hajZuc2pS723UhPrg&_nc_ht=scontent-fco1-1.xx&oh=b520f67b76e8ec75f3c978d3a20d8696&oe=5E692A7D)
 
 ### History
 * The MagicBus project starts in November 2012 for a master exam.
@@ -41,7 +41,7 @@ The cities in MagicBus were:
 
 <br>
 
-![keepcalm](https://drive.google.com/file/d/1So8QGNwUsbLPR55E3uOa7h1HEzUScX6D/view?usp=sharing)
+![keepcalm](https://scontent-fco1-1.xx.fbcdn.net/v/t1.0-9/1457467_584261074961861_1667007903_n.png?_nc_cat=110&_nc_ohc=zuq_6N1a5vUAQlml1kJGGkoYjJWMcE56Kpanx17mucvH8MhOQPEOXGX6w&_nc_ht=scontent-fco1-1.xx&oh=0b49e185449481cc70c48f3e47dab026&oe=5E6A2609)
 
 
 Maps
