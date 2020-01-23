@@ -34,6 +34,17 @@ The cities in MagicBus were:
 * Torino
 * other cities added by users using the wiki
 
+### Citation
+If you use my code in your research, mention this project.
+```
+@misc{magicbus,
+  author =       {Nicola Procopio, Giuseppe Vacatello},
+  title =        {MagicBus},
+  howpublished = {\url{https://github.com/MagicBusApp/magicbus/}},
+  year =         {2012}
+}
+```
+
 ### Contacts
 * [Facebook Fanpage](https://www.facebook.com/MagicBusApp/)
 * [Linkedin Page](https://it.linkedin.com/company/magicbusapp-it?)
